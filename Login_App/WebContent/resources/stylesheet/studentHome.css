@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.275rem;
+    color: var(--bs-emphasis-color);
+}
+
+/* Layout for admin dashboard skeleton */
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    background: #0D2137;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #ECECEC;
+}
+
+/* Sidebar Elements Style */
+
+.sidebar-logo {
+    padding: 1.15rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Sidebar Header */
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+    overflow: hidden;
+}
+
+hr {
+	color: white;
+}
+
+.sidebar-header .user-pic{
+	float: left;
+	width: 60px;
+	padding: 2px;
+	border-radius: 12px;
+	margin-right: 15px;
+	overflow: hidden;
+}
+
+.sidebar-header .user-pic img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar-header .user-info {
+  float: left;
+  margin-top: 2%;
+}
+
+.sidebar-header .user-info > span {
+  display: block;
+}
+
+.sidebar-header .user-info .username {
+  font-size: 20px;
+}
+
+.sidebar-header .user-info .user-role {
+  font-size: 12px;
+}
+
+/*Sidebar Navigation*/
+
+.sidebar-item {
+	color: white;
+	display: block;
+	padding: 1.25rem 1.5rem 1rem;
+}
+
+a.sidebar-link {
+    color: #e9ecef;
+    position: relative;
+    font-size: 0.875rem;
+    margin-left: 10px;
+}
+
+.sidebar-nav {
+	margin-bottom: 80%;
+}
+
+.sidebar-item:hover{
+	background-color: #FF8E2B;
+}
+
+/*Sidebar Footer*/
+
+.sidebar-footer {
+	bottom: 0;
+	position: fixed;
+	color: #e9ecef;
+    font-size: .75rem;
+    margin-bottom: 1.5%;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-footer-link {
+	color: white;
+	font-size: 0.875rem;
+	margin-left: 10px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-expand .navbar-nav {
+    margin-left: auto;
+}
+
+/*Navbar Language Dropdown*/
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: .125em;
+}
+
+.nav-img {
+	width: 15px;
+	padding: 2%;
+}
+
+
+/*Main Content*/
+
+.content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+    position: relative;
+}
+
+.header-container {
+	/*background: #FF8E2B;*/
+	position: relative;
+	padding: 25px;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+
+.container {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.left-container {
+	background: white;
+	border-radius: 15px;
+	padding: 45px;
+	margin-right: 15px;
+}
+
+.right-container {
+	background: #FF8E2B;
+	border-radius: 15px;
+	padding: 45px;
+	margin-left: 15px;
+}
+
+@media (min-width:768px) {
+    .content {
+        max-width: auto;
+        width: auto;
+    }
+}
+
+/* managerHome.jsp Styles */
+
+.ticket-col {
+	background: white;
+	border-radius: 15px;
+	padding: 20px;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.ticket-col p{
+	font-size: 1.25rem;
+}
+
+.activity-content {
+	background: white;
+	width: 500px;
+	padding: 20px;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+

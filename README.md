@@ -2,6 +2,7 @@
 
 ## Description
 This webapp is allows users with different user roles of 'User' and 'Manager' to access different pages. The webapp also allows users to change between 3 different languages 'English', 'Malay' and 'German'.
+Contents such as table contents are hard-coded as this project is only to show the above-mentioned functions!
 
 ## Application and Language Usage
 1. Java EE
